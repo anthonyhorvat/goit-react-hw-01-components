@@ -37,6 +37,7 @@ const ProfileContainer = styled.div`
   padding: 20px;
   width: 300px;
   margin: 0 auto;
+  margin-top: 50px;
   background-color: #f9f9f9;
 `;
 
