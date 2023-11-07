@@ -6,7 +6,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => (
     <DescriptionContainer>
       <Avatar src={avatar} alt="User avatar" />
       <Name>{username}</Name>
-      <Tag>{tag}</Tag>
+      <Tag>@{tag}</Tag>
       <Location>{location}</Location>
     </DescriptionContainer>
     <StatsList>
