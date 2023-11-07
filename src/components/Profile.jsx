@@ -34,7 +34,7 @@ const ProfileContainer = styled.div`
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;
+  padding-top: 50px;
   width: 300px;
   margin: 0 auto;
   margin-top: 50px;
@@ -46,7 +46,6 @@ const DescriptionContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-right: 20px;
 `;
 
 const Avatar = styled.img`
@@ -55,6 +54,7 @@ const Avatar = styled.img`
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
+  background-color: #ffc65c;
 `;
 
 const Name = styled.p`
@@ -78,25 +78,31 @@ const Location = styled.p`
 const StatsList = styled.ul`
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
   display: flex;
   justify-content: space-between;
   gap: 25px;
   margin-top: 20px;
+  background-color: #e8e9f2;
+  width: 100%;
+  border-top: 1px solid #9ea9b5;
 `;
 
 const StatsItem = styled.li`
   display: flex;
+  gap: 5px;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 `;
 
 const Label = styled.span`
   font-size: 16px;
+  font-weight: 700;
 `;
 
 const Quantity = styled.span`
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 14px;
   color: #555;
 `;
 
