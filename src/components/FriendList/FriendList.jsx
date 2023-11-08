@@ -1,6 +1,5 @@
 import FriendListItem from './FriendListItem';
-import styled from 'styled-components';
-
+import { FriendsListElement } from './FriendListStyled';
 const FriendList = ({ friends }) => (
   <FriendsListElement>
     {friends.map(friend => (
@@ -15,12 +14,3 @@ const FriendList = ({ friends }) => (
 );
 
 export default FriendList;
-
-const FriendsListElement = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 300px;
-  margin: 0 auto;
-  margin-top: 50px;
-`;

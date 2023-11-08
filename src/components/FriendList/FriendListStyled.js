@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
-const FriendListItem = ({ avatar, name, isOnline }) => (
-  <FriendContainer className={isOnline ? 'online' : 'offline'}>
-    <Status className={isOnline ? 'online' : 'offline'} />
-    <Avatar src={avatar} alt={`${name}'s avatar`} width="48" />
-    <Name>{name}</Name>
-  </FriendContainer>
-);
 
-export default FriendListItem;
+export const FriendsListElement = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+`;
 
-const FriendContainer = styled.div`
+export const FriendContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 10px;
@@ -27,17 +27,17 @@ const FriendContainer = styled.div`
   }
 `;
 
-const Avatar = styled.img`
+export const Avatar = styled.img`
   object-fit: cover;
   margin-right: 15px;
 `;
 
-const Name = styled.p`
+export const Name = styled.p`
   font-size: 18px;
   font-weight: bold;
 `;
 
-const Status = styled.span`
+export const Status = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
